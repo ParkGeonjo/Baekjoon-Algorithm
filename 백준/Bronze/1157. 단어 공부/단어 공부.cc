@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int a[26] = { 0, }, max = 0;
-    char c = 0;
+    char c;
     string s;
     
     cin >> s;
