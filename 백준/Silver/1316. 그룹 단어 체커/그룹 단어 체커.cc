@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int a[26], n, word = 0, check;
+    int a[26], n, word = 0;
     string s;
     
     cin >> n;
@@ -13,14 +13,10 @@ int main() {
         cin >> s;
         
         for(int j = 0; j < s.length(); j++) {
-            if(a[s[j] - 97] == 1) {
-                check = 0;
-                break;
-            }
+            if(a[s[j] - 97] == 1) break;
             if(s[j] != s[j + 1]) a[s[j] - 97] = 1;
-            if(j == s.length() - 1) check = 1;
+            if(j == s.length() - 1) word++;
         }
-        word += check;
     }
     cout << word;
 }
