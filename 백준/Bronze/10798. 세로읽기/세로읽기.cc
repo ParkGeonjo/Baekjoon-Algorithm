@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-char a[5][16];
+char a[5][15];
 
 int main() {
     for(int i = 0; i < 5; i++) cin >> a[i];
