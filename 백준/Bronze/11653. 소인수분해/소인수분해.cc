@@ -10,8 +10,7 @@ int main() {
         if(n % i == 0) {
             n /= i;
             cout << i << endl;
-            continue;
         }
-        i++;
+        else i++;
     }
 }
