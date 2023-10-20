@@ -6,9 +6,7 @@ int main() {
 
 	cin >> n;
 
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < 2; j++) cin >> pos[i][j];
-	}
+	for (int i = 0; i < n; i++) cin >> pos[i][0] >> pos[i][1];
 
 	for (int i = 0; i < n; i++) {
 		x_min = x_min >= pos[i][0] ? pos[i][0] : x_min;
